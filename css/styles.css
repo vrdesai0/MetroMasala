@@ -1,0 +1,524 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Arial, sans-serif';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    /* Prevent horizontal overflow */
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-image: url("../images/nav.png");
+    opacity: 0.9;
+    /* background-color: rgba(229, 179, 179, 0.318); */
+    /* background: linear-gradient(90deg, rgba(255, 87, 34, 1) 0%, rgba(255, 195, 0, 1) 100%); */
+    /* background: linear-gradient(90deg, rgb(78 114 146 / 36%) 0%, rgb(14 102 221 / 15%) 100%); */
+    /* background-color: rgba(245, 240, 240, 0.192); */
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding: 0px 0px;
+    /* Adjusted padding to fit within viewport */
+    z-index: 1000;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    flex-wrap: wrap;
+    /* Allow wrapping on smaller screens */
+}
+
+/* .navbar .logo {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 3rem;
+    font-weight: bolder;
+    text-decoration: none;
+} */
+
+.navbar .logo img {
+    height: 65px;
+    width: 112px;
+    /* margin-right: 20px; */
+}
+
+.navbar ul {
+    /* left: -150px; */
+    width: 85%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    /* gap: 10px; */
+    /* Reduced gap to fit all items */
+    /* margin: 0; */
+    padding: 0;
+    /* flex-wrap: wrap; */
+    /* Allow items to wrap to the next line if necessary */
+    font-weight: bolder;
+    
+}
+
+.navbar ul li {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #fd0202 50%, #fd919a2d 51%, #dda9a900 50%, #f8d3d300 100%);
+    background-size: 210% 10%;
+    background-position: bottom right;
+    /* transition: background-position 0.3s; */
+    background-color: rgba(255, 255, 255, 0);
+
+    /* another animation */
+
+    transition: background-position 1s ; 
+    /* background: 
+    linear-gradient(to right, rgb(84, 220, 54), rgb(30, 243, 58)),
+    linear-gradient(to right, rgb(21, 255, 0), rgb(43, 255, 0), rgb(0, 200, 53));
+    background-size: 100% 0.1em, 0 0.1em;
+    background-position: 100% 100%, 0 100%;*/
+    background-repeat: no-repeat; 
+}
+
+.navbar ul li:hover{
+    background-size: 200% 10%;
+
+    background-position: bottom left;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 18px;
+    /* Adjusted font size */
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar a:hover {
+    color: red;
+}
+
+
+
+
+
+.container{
+    /* margin-top: 10px; */
+    /* filter: blur(0.8px); */
+    position: relative;
+    z-index: -1;
+}
+.slider {
+
+    background-image:linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) , rgba(0, 0, 0, 0) );
+    overflow: hidden;
+    width: 98.8vw;
+    height: 100vh;
+    position: relative;
+    z-index: -1;
+    /* opacity: 0.94; */
+    /* z-index: 10; */
+    filter: brightness(0.99);
+    
+   }
+
+
+   .sltext1{
+        position: absolute;
+        /* filter: blur(0px) !important; */
+
+        width: 50%;
+        height: 100px;
+        z-index: 10;
+        top: 0;
+        color: white;
+        font-size: 52px;
+        text-align: center;
+        padding-left: 40%;
+        padding-top: 10%;
+
+   }
+
+   .sltext2{
+        text-align: center;
+        padding-right: 45%;
+        padding-top: 10%;
+   }
+
+   .sltext3{
+        width: 80%;
+        text-align: center;
+        padding-left: 5%;
+        padding-top: 15%;
+   }
+
+   .sltext4{
+        width: 80%;
+        text-align: center;
+        padding-left: 10%;
+        padding-top: 25%;
+   }
+
+   .sltext5{
+        height: 10%;
+        width: 25%;
+        text-align: center;
+        padding-left: 40%;
+        padding-top: 6%;
+   }
+
+   .sltext5_2{
+        width: 20%;
+        margin-top: -120px;
+        text-align: center;
+        padding-left: 80%;
+   }
+
+
+
+   .sltext{
+    position: absolute; 
+    /* color: #f77506; */
+    color: white;
+    font-family: 'Indie Flower', cursive;
+    font-weight: bolder;
+    font-size:52px;
+   }
+    
+   .slider .slide {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    animation: slider 15s infinite;
+   }
+    
+   .slider .slide:nth-child(1) {
+      background-image: url('../images/bg1.jpg');
+      animation-delay: 0s;
+   }
+   
+   .slider .slide:nth-child(2) {
+      background-image: url('../images/bg2.jpg');
+      animation-delay: -3s;
+   }
+   
+   .slider .slide:nth-child(3) {
+      background-image: url('../images/bg3.jpg');
+      animation-delay: -6s;
+   }
+   
+   .slider .slide:nth-child(4) {
+      background-image: url('../images/bg4.jpg');
+      animation-delay: -9s;
+   }
+   
+   .slider .slide:nth-child(5) {
+      background-image: url('../images/bg5.jpg');
+      animation-delay: -12s;
+   }
+   
+   @keyframes slider {
+    0%, 16%, 100% {
+      transform: translateX(0);
+      animation-timing-function: ease;
+    }
+    20% {
+        transform: translateX(-100%);
+      animation-timing-function: step-end;
+    }
+    96% {
+        transform: translateX(100%);
+      animation-timing-function: ease;
+    }
+}
+
+.about {
+    width: 100%;
+    height: 100vh;
+    margin-top: 200px;
+    position: relative;
+}
+
+.summary {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+    /* justify-content: center; */
+    /* align-items: center; */
+    position: absolute;
+    top: 0;
+    padding-top: 50px;
+    width: 50%;
+    padding-left: 5%;
+    font-size: larger;
+    text-align: center;
+}
+
+.info {
+    /* background-color: white; */
+    height: 100vh;
+    width: 100%;
+    background-image: url("../images/summary.jpg");
+    /* background-position: top; */
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    /* filter: blur(1px); */
+}
+
+.summary h1 {
+    /* color: red; */
+    font-size: 52px;
+}
+
+
+
+.back {
+    height: 100vh;
+    top: 78px;
+    /* margin-top: -500px; */
+    z-index: -10;
+    width: 100vw;
+    /* background-size: contain; */
+    position: fixed ;
+    background-image: url("../images/back.jpg");
+    /* background-size: cover; */
+    
+
+}
+
+.back h1 {
+    color: white;
+    font-size: 52px;
+    padding-top: 25%;
+    padding-left: 10%;
+}
+
+.back2 {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 700px;
+    z-index: -9;
+    background-image: url("../images/bg1.jpg");
+}
+
+
+
+.carousel {
+    margin-top: 40px;
+    display: flex;
+    margin-top: 200px;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    /* background-color: #f9f9f9; */
+    background-image: url("../images/carous.jpg");
+    /* padding: 20px 0; */
+    position: relative;
+}
+
+/* .carousel h1 {
+    position: absolute;
+    top: 0;
+    margin-top: 10px;
+    font-size: 52px;
+    font-weight: bolder;
+    color: white;
+} */
+
+.carousel-container {
+    margin-top: 80px;
+    width: 80%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-slide {
+    display: flex;
+    width: 400%;
+    /* Double the width for two copies of images */
+    animation: slide 18s linear infinite;
+    /* Increased animation speed */
+    overflow: hidden;
+    /* Hide overflow to prevent scrollbar */
+}
+
+.carousel-slide img {
+    width: 350px;
+    /* Set width to 50% for two copies of images */
+    max-height: 480px;
+    /* Adjusted maximum height for better appearance */
+    margin-right: 25px;
+    /* Added space between each slide */
+    object-fit: cover;
+    /* Maintain aspect ratio while covering container */
+    border-radius: 15px;
+}
+
+.carousel-slide:hover {
+
+    animation-play-state: paused;
+    
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+
+    /* Adjusted the translateX value to cover all images */
+}
+
+
+
+
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* 
+@media screen and (max-width: 480px) {
+    .navbar .logo img {
+        height: 55px;
+        width: 55px;
+    }
+    .navbar a {
+        font-size: 12px;
+        /* Adjusted font size */
+    /* } */
+    .navbar ul {
+        gap: 5px;
+        /* Reduced gap to fit all items */
+    }
+    .hero {
+        background-image: url('../images/hero-image.jpg');
+        max-height: 100vh; 
+        max-width: auto;
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* object-fit: cover; */
+        /* width: 80vw; */
+    } 
+/* } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Arial, sans-serif';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+/* Your existing styles here */
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        font-size: 90%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .container .slider .slide {
+        background-size: contain;
+    }
+    .big-cont {
+        height: auto;
+        padding: 20px;
+    }
+
+    .info {
+        /* background-size: contain; */
+        background-position: right;
+        filter: blur(1.5px);
+        background-size: auto;
+    }
+    .summary {
+        margin-left: 10%;
+        width: 70%;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .content, .section {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 80%;
+    }
+
+    .navbar {
+        text-align: center;
+    }
+
+    .big-cont {
+        padding: 10px;
+    }
+
+    h1, h2, h3 {
+        font-size: 1.5em;
+    }
+}
