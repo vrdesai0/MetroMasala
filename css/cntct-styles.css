@@ -11,7 +11,7 @@ body, html {
     /* width: 100vw; */
     /* position: relative; */
     overflow: hidden;
-    background-image: url('../images/bk-cntct.jpg');
+    background-image: url('../images/bk-cntct1.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -27,8 +27,13 @@ body, html {
     align-items: center;
     font-size: large;
     font-weight: bolder;
-    background-color: rgba(255, 255, 255, 0.637);
-    padding: 20px 30px;
+    /* background-color: rgba(255, 255, 255, 0.637); */
+    /* background-image: url("../images/summary.jpg"); */
+    /* background-color: rgba(255, 0, 0, 0.068); */
+    background-position: right;
+    margin-left: -120px;
+    border: 2px solid white;
+    padding: 20px 50px 20px 30px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-width: 400px;
@@ -46,7 +51,7 @@ h1 {
 }
 
 p {
-    color: #666;
+    color: white;
     margin-bottom: 20px;
 }
 
@@ -60,12 +65,25 @@ label {
 input[type="text"],
 input[type="email"],
 textarea {
+    background-color: transparent;
+    color: white;
+    font-weight: bolder;
+    font-size: large;
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
+    border: none;
+    /* background-color: rgba(255, 0, 0, 0.233); */
+    background-image: url("../images/bg5.jpg");
+    background-position: center;
     border-radius: 5px;
     font-size: 16px;
+}
+
+::placeholder {
+    color: white;
+    font-weight: bold;
 }
 
 button {
@@ -83,6 +101,9 @@ button {
     background-position: 100% 0;
     transition: background-position 0.3s;
     text-decoration: none;
+    background-image: url("../images/bg5.jpg");
+    background-position: center;
+    background-size: cover;
 }
 
 button:hover{
