@@ -186,7 +186,7 @@ body {
     height: 100%;
     background-size: cover;
     background-position: center;
-    animation: slider 15s infinite;
+    animation: slider 25s infinite;
    }
     
    .slider .slide:nth-child(1) {
@@ -196,22 +196,22 @@ body {
    
    .slider .slide:nth-child(2) {
       background-image: url('../images/bg2.jpg');
-      animation-delay: -3s;
+      animation-delay: -5s;
    }
    
    .slider .slide:nth-child(3) {
       background-image: url('../images/bg3.jpg');
-      animation-delay: -6s;
+      animation-delay: -10s;
    }
    
    .slider .slide:nth-child(4) {
       background-image: url('../images/bg4.jpg');
-      animation-delay: -9s;
+      animation-delay: -15s;
    }
    
    .slider .slide:nth-child(5) {
       background-image: url('../images/bg5.jpg');
-      animation-delay: -12s;
+      animation-delay: -20s;
    }
    
    @keyframes slider {
