@@ -119,3 +119,240 @@ button:hover{
     font-size: large;
     font-weight: bold;
 }
+
+
+.navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-image: url("../images/nav.png");
+    opacity: 0.9;
+    display: flex;
+    align-items: center;
+    padding: 0px 0px;
+    z-index: 1000;
+    flex-wrap: wrap;
+}
+.navbar .logo img {
+    height: 65px;
+    width: 112px;
+    border: 3px solid rgba(0, 0, 0, 0);
+    outline: 2px solid white;
+    border-radius: 6px;
+    /* margin-right: 20px; */
+}
+
+.navbar ul {
+    /* left: -150px; */
+    /* width: 85%; */
+    /* list-style: none; */
+    /* display: flex; */
+    /* justify-content: space-evenly; */
+    /* gap: 10px; */
+    /* Reduced gap to fit all items */
+    /* margin: 0; */
+    /* padding: 0; */
+    /* flex-wrap: wrap; */
+    /* Allow items to wrap to the next line if necessary */
+    /* font-weight: bolder; */
+    
+}
+
+.navbar ul li {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #fd0202 50%, #fd919a2d 51%, #dda9a900 50%, #f8d3d300 100%);
+    background-size: 210% 10%;
+    background-position: bottom right;
+    /* transition: background-position 0.3s; */
+    background-color: rgba(255, 255, 255, 0);
+
+    /* another animation */
+
+    transition: background-position 1s ; 
+    /* background: 
+    linear-gradient(to right, rgb(84, 220, 54), rgb(30, 243, 58)),
+    linear-gradient(to right, rgb(21, 255, 0), rgb(43, 255, 0), rgb(0, 200, 53));
+    background-size: 100% 0.1em, 0 0.1em;
+    background-position: 100% 100%, 0 100%;*/
+    background-repeat: no-repeat; 
+}
+
+.navbar ul li:hover{
+    background-size: 200% 10%;
+
+    background-position: bottom left;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 18px;
+    /* Adjusted font size */
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar a:hover {
+    color: red;
+}
+
+
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+
+    body {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .navbar {
+        width: 100vw;
+        gap: 0;
+    }
+    .navbar .logo img {
+        height: 55px;
+        width: 65px;
+    }
+    .navbar a {
+        font-size: 12px;
+    }
+    .navbar ul {
+        width: 55%;
+        margin-left: 0px;
+        background-color: red;
+        gap: 0px;
+    }
+
+
+
+
+
+    
+
+.navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-image: url("../images/nav.png");
+    opacity: 0.9;
+    display: flex;
+    
+    align-items:flex-start;
+    padding: 0px 0px;
+    z-index: 1000;
+    flex-wrap: wrap;
+}
+.navbar .logo img {
+    display: inline;
+    height: 55px;
+    width: 65px;
+    border: 3px solid rgba(0, 0, 0, 0);
+    outline: 2px solid white;
+    border-radius: 6px;
+    /* margin-right: 20px; */
+}
+
+.navbar ul {
+    /* left: 150px; */
+    width: 70%;
+    list-style: none;
+    display: inline;
+    /* gap: 10px; */
+    /* Reduced gap to fit all items */
+    /* margin: 0; */
+    padding: 0;
+    /* flex-wrap: wrap; */
+    /* Allow items to wrap to the next line if necessary */
+    font-weight: bolder;
+    
+}
+
+.navbar ul li {
+    display: flex;
+    align-items: end;
+    background: linear-gradient(to right, #fd0202 50%, #fd919a2d 51%, #dda9a900 50%, #f8d3d300 100%);
+    background-size: 210% 10%;
+    background-position: bottom right;
+    /* transition: background-position 0.3s; */
+    background-color: rgba(255, 255, 255, 0);
+
+    /* another animation */
+
+    transition: background-position 1s ; 
+    /* background: 
+    linear-gradient(to right, rgb(84, 220, 54), rgb(30, 243, 58)),
+    linear-gradient(to right, rgb(21, 255, 0), rgb(43, 255, 0), rgb(0, 200, 53));
+    background-size: 100% 0.1em, 0 0.1em;
+    background-position: 100% 100%, 0 100%;*/
+    background-repeat: no-repeat; 
+}
+
+.navbar ul li:hover{
+    background-size: 200% 10%;
+
+    background-position: bottom left;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 18px;
+    /* Adjusted font size */
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+
+
+
+
+    
+.contact-container {
+    margin-left: -20px;
+}
+
+.big-cont{
+    height: 87.7vh;
+    /* width: 100vw; */
+    /* position: relative; */
+    overflow: hidden;
+    background-image: url('../images/bk-cntct1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.note{
+    background-color: white;
+    display: flex;
+    gap: 0px;
+    justify-content: center;
+    color: #666;
+    font-size: large;
+    font-weight: bold;
+
+}
+
+}
