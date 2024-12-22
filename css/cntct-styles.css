@@ -1,13 +1,15 @@
-body, html {
+body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    /* height: 100; */
-    
+    /* width: 100vw; */
+    height: 100vh;
 }
 
 .big-cont{
-    height: 87.7vh;
+    width: 100%;
+    /* height: 87.7vh; */
+    height: 87.7%;
     /* width: 100vw; */
     /* position: relative; */
     overflow: hidden;
@@ -22,22 +24,18 @@ body, html {
 
 .contact-container {
     display: flex;
+    width: 400px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: large;
     font-weight: bolder;
-    /* background-color: rgba(255, 255, 255, 0.637); */
-    /* background-image: url("../images/summary.jpg"); */
-    /* background-color: rgba(255, 0, 0, 0.068); */
-    background-position: right;
-    margin-left: -120px;
+    /* margin-left: -120px; */
     border: 2px solid white;
     padding: 20px 50px 20px 30px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-width: 400px;
-    width: 100%;
     text-align: center;
     animation: fadeIn 2.5s ease-out;
 }
@@ -48,6 +46,7 @@ h1 {
     text-decoration-line: underline;
     text-decoration-style: dotted;
     text-decoration-color: rgb(8, 80, 80);
+    color: white;
 }
 
 p {
@@ -88,19 +87,12 @@ textarea {
 
 button {
     padding: 10px 20px;
-    /* background-color: black; */
     color: white;
     font-weight: bolder;
-    border: none;
+    /* border: none; */
     cursor: pointer;
     border-radius: 5px;
-    /* background: #F00; */
-    /* transition: background-color 0.3s; */
-    background: linear-gradient(to right, #f7060e 0%, #f8b3b5 50%, #f4e7e7 50%, #090808 100%);
-    background-size: 200% 100%;
-    background-position: 100% 0;
     transition: background-position 0.3s;
-    text-decoration: none;
     background-image: url("../images/bg5.jpg");
     background-position: center;
     background-size: cover;
@@ -111,6 +103,7 @@ button:hover{
 }
 
 .note{
+    width: 100%;
     background-color: white;
     display: flex;
     gap: 200px;
@@ -122,14 +115,15 @@ button:hover{
 
 
 .navbar {
+    width: 100%;
     position: sticky;
     top: 0;
-    width: 100%;
+    /* width: 100%; */
     background-image: url("../images/nav.png");
     opacity: 0.9;
     display: flex;
     align-items: center;
-    padding: 0px 0px;
+    justify-content: space-between;
     z-index: 1000;
     flex-wrap: wrap;
 }
@@ -143,9 +137,10 @@ button:hover{
 }
 
 .navbar ul {
-    /* left: -150px; */
+    right: 150px;
     /* width: 85%; */
-    /* list-style: none; */
+    /* width: 1%; */
+    list-style: none;
     /* display: flex; */
     /* justify-content: space-evenly; */
     /* gap: 10px; */
@@ -159,13 +154,13 @@ button:hover{
 }
 
 .navbar ul li {
-    display: flex;
-    align-items: center;
+    /* display: flex; */
+    /* align-items: center; */
     background: linear-gradient(to right, #fd0202 50%, #fd919a2d 51%, #dda9a900 50%, #f8d3d300 100%);
     background-size: 210% 10%;
     background-position: bottom right;
-    /* transition: background-position 0.3s; */
-    background-color: rgba(255, 255, 255, 0);
+    transition: background-position 0.3s;
+    /* background-color: rgba(255, 255, 255, 0); */
 
     /* another animation */
 
@@ -214,119 +209,15 @@ button:hover{
 
 @media screen and (max-width: 480px) {
 
-    body {
-        height: 100vh;
-        width: 100vw;
-    }
-
-    .navbar {
-        width: 100vw;
-        gap: 0;
-    }
     .navbar .logo img {
         height: 55px;
         width: 65px;
     }
-    .navbar a {
-        font-size: 12px;
-    }
-    .navbar ul {
-        width: 55%;
-        margin-left: 0px;
-        background-color: red;
-        gap: 0px;
-    }
-
-
-
-
-
-    
-
-.navbar {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    background-image: url("../images/nav.png");
-    opacity: 0.9;
-    display: flex;
-    
-    align-items:flex-start;
-    padding: 0px 0px;
-    z-index: 1000;
-    flex-wrap: wrap;
-}
-.navbar .logo img {
-    display: inline;
-    height: 55px;
-    width: 65px;
-    border: 3px solid rgba(0, 0, 0, 0);
-    outline: 2px solid white;
-    border-radius: 6px;
-    /* margin-right: 20px; */
-}
-
-.navbar ul {
-    /* left: 150px; */
-    width: 70%;
-    list-style: none;
-    display: inline;
-    /* gap: 10px; */
-    /* Reduced gap to fit all items */
-    /* margin: 0; */
-    padding: 0;
-    /* flex-wrap: wrap; */
-    /* Allow items to wrap to the next line if necessary */
-    font-weight: bolder;
-    
-}
-
-.navbar ul li {
-    display: flex;
-    align-items: end;
-    background: linear-gradient(to right, #fd0202 50%, #fd919a2d 51%, #dda9a900 50%, #f8d3d300 100%);
-    background-size: 210% 10%;
-    background-position: bottom right;
-    /* transition: background-position 0.3s; */
-    background-color: rgba(255, 255, 255, 0);
-
-    /* another animation */
-
-    transition: background-position 1s ; 
-    /* background: 
-    linear-gradient(to right, rgb(84, 220, 54), rgb(30, 243, 58)),
-    linear-gradient(to right, rgb(21, 255, 0), rgb(43, 255, 0), rgb(0, 200, 53));
-    background-size: 100% 0.1em, 0 0.1em;
-    background-position: 100% 100%, 0 100%;*/
-    background-repeat: no-repeat; 
-}
-
-.navbar ul li:hover{
-    background-size: 200% 10%;
-
-    background-position: bottom left;
-}
-
-.navbar a {
-    color: white;
-    text-decoration: none;
-    font-weight: bolder;
-    font-size: 18px;
-    /* Adjusted font size */
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-
-
-
-
 
     
 .contact-container {
-    margin-left: -20px;
+    width: 250px;
+    margin-left: -10px;
 }
 
 .big-cont{
@@ -347,8 +238,10 @@ button:hover{
 .note{
     background-color: white;
     display: flex;
+    flex-direction: column;
     gap: 0px;
     justify-content: center;
+    align-items: center;
     color: #666;
     font-size: large;
     font-weight: bold;
